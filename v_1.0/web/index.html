@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>青大运动测试页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="sign-in-container">
+        <form>
+          <h1>热身阶段</h1>
+          <span>请输入运动信息来进行热身</span>
+          <input type="text" placeholder="学号" id="Sno">
+          <input type="text" placeholder="运动距离" id="Dis">
+          <input type="text" placeholder="运动区域编号" id="Area">
+          <button class="form_btn" onclick="Run()" type="button">热身结束<br>开始运动</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay-right">
+          <h1 id="h1">使用须知</h1>
+          <p id="p">一. 本程序尚处于测试阶段，一经使用，出现任何后果都与作者无关。<br><br>
+            二. 运动距离单位为米，取值范围是[1000, 5500]。<br><br>
+            三. 运动区域编号为：<br>
+            1-浮山东 2-浮山西 3-浮山北 4-金家岭东 5-金家岭西</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
